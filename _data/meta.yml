@@ -1,11 +1,18 @@
 ---
 # This meta data should be filled out.
-title: Deck title
-description: Deck description
-keywords: [deck.js, talk]
+title: Oral Qualifying Exam
+description: Oral Qualifying Exam
+keywords:
+  - dichalcogenides
+  - superconductivity
+  - mos2
+  - 2015
+  - physics
+  - deck.js
+  - talk
 locale: en_US
-site_name: Site name
-color: "#3f51b5"
+site_name: evansosenko.com
+color: "#00695c"
 
 # This meta data is optional.
 # determiner: null
@@ -14,7 +21,7 @@ color: "#3f51b5"
 # video: https://razor-x.github.io/jekyll-and-deck.js/talk.mpg
 # type: website
 #
-# twitter:
-#   card: summary
-#   site: "@username"
-#   creator: "@username"
+twitter:
+  card: summary
+  site: "@evansosenko"
+  creator: "@evansosenko"

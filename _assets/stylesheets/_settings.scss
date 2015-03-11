@@ -2,5 +2,12 @@
 // Material Theme Settings
 //
 
-$qrcode: false;
-$logos: ();
+$primary-palette: Teal;
+$accent-palette: Blue;
+
+$primary-shade: 800;
+
+$qrcode: true;
+$logos: (
+  ucr: ('ucr-logo', 50px, 5.2, 'svg')
+);
