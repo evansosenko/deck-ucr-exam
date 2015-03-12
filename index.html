@@ -3,3 +3,15 @@ layout: deck
 ---
 
 {% assign deck = site.data.deck %}
+
+{% slide : Outline %}
+  <div class="outline first">
+    <h3>Spin lifetime</h3>
+    {% image spin-lifetime/device.svg class="fig" %}
+  </div>
+
+  {% slide div.outline.last %}
+    <h3>Dichalcogenide superconductivity</h3>
+    <div class="lattice-image"></div>
+  {% endslide %}
+{% endslide %}

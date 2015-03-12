@@ -1,3 +1,33 @@
 //
 // Custom Deck Styles
 //
+
+article.deck-container
+  .lattice-image
+    +background-image('dichalcogenides/lattice', 250px, 191px)
+
+    @media #{$xga}
+      +background-image('dichalcogenides/lattice', 400px, 343px)
+
+  @media #{$xga}
+    .outline
+      display: flex
+      align-items: center
+
+      h3
+        text-transform: capitalize
+
+      h3, div, img
+        text-align: center
+        +span-columns(6)
+
+      .first img
+        +omega
+
+      &.last
+        h3
+          +shift(6)
+          +omega
+
+        div
+          +shift(-12)
