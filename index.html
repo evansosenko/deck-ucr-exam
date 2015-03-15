@@ -22,7 +22,7 @@
   <meta property="og:site_name" content="evansosenko.com" />
 
 
-<meta property="og:updated_time" content="2015-03-13T23:46:38+00:00" />
+<meta property="og:updated_time" content="2015-03-15T20:16:04+00:00" />
 
 
   <meta property="og:locale" content="en_US" />
@@ -83,7 +83,7 @@
   <style type="text/css">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.md-preloader{font-size:0;display:inline-block;-webkit-animation:outer 6600ms linear infinite;animation:outer 6600ms linear infinite}.md-preloader svg{-webkit-animation:inner 1320ms linear infinite;animation:inner 1320ms linear infinite}.md-preloader svg circle{fill:none;stroke:#448aff;stroke-linecap:square;-webkit-animation:arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite;animation:arc 1320ms cubic-bezier(0.8, 0, 0.4, 0.8) infinite}@-webkit-keyframes outer{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes outer{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes inner{0%{-webkit-transform:rotate(-100.8deg);transform:rotate(-100.8deg)}100%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes inner{0%{-webkit-transform:rotate(-100.8deg);transform:rotate(-100.8deg)}100%{-webkit-transform:rotate(0);transform:rotate(0)}}@-webkit-keyframes arc{0%{stroke-dasharray:1 210.48670779px;stroke-dashoffset:0}40%{stroke-dasharray:151.55042961px,210.48670779px;stroke-dashoffset:0}100%{stroke-dasharray:1 210.48670779px;stroke-dashoffset:-151.55042961px}}@keyframes arc{0%{stroke-dasharray:1 210.48670779px;stroke-dashoffset:0}40%{stroke-dasharray:151.55042961px,210.48670779px;stroke-dashoffset:0}100%{stroke-dasharray:1 210.48670779px;stroke-dashoffset:-151.55042961px}}html,body{height:100%;overflow:hidden;background-color:palette(Teal, 50)}.deck-container{visibility:hidden}#loading_screen-no-js{font-size:2rem}#loading_screen,#loading_screen-no-js{display:flex;height:100%;align-items:center;justify-content:center;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif}#loading_screen span,#loading_screen-no-js span{margin-left:1rem;font-size:4rem}#loading_screen .md-preloader svg circle,#loading_screen-no-js .md-preloader svg circle{stroke:palette(Blue, 500)}
 </style>
   
-  <script src="https://io.evansosenko.com/deck-ucr-exam/assets/head-8496864fe4f6a08e101a4f3de6b14313.js" async="true"></script>
+  <script src="https://io.evansosenko.com/deck-ucr-exam/assets/head-40ac4430db24519166b0db82469aa070.js" async="true"></script>
 </head>
 
 <body>
@@ -147,16 +147,248 @@
 
 
 
+$$\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\vK}{\mathbf{k}}
+\newcommand{\exOfK}{\left( \vK \right)}
+\newcommand{\exOfMK}{\left( - \vK \right)}
+\newcommand{\hc}{\text{h.c.}}
+
+\newcommand{\exInteration}[2]{
+  {c^-_{#1}}^† \left(   \vK' \right)
+  {c^-_{#2}}^† \left( - \vK' \right)
+  c^-_{#2}     \left( - \vK \right)
+  c^-_{#1}     \left(   \vK \right)
+}
+$$
+
 <section class="slide"><h2> Outline</h2><div class="content">
   <div class="outline first">
     <h3>Spin lifetime</h3>
-    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/spin-lifetime/device-876b737fc49c9fbce51103d85c1e5352.svg" class="fig">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/spin-lifetime/device-a852656752144b759225c945856e6e77.svg">
   </div>
 
   <div class="slide outline last">
     <h3>Dichalcogenide superconductivity</h3>
     <div class="lattice-image"></div>
   </div>
+</div></section>
+
+<section class="slide"><h2> Dichalcogenides</h2><div class="content">
+  <ol class="half center">
+    <li>Dichalcogenides overview</li>
+    <li>Induced superconducting phase</li>
+    <li>Optical transitions</li>
+    <li>Superconducting optical excitations</li>
+  </ol>
+
+  <div class="lattice-image two-thirds center"></div>
+</div></section>
+
+<section class="slide"><h2> Effective Hamiltonian</h2><div class="content">
+  <div class="lattice-image half"></div>
+
+  <ul class="half omega">
+    <li>\( \mathrm{MoS_2} \), \( \mathrm{WS_2} \), \( \mathrm{MoSe_2} \), \( \mathrm{WSe_2} \)</li>
+    <li>Similar to monolayer graphene:
+        two inequivalent valleys: \( \vect{K} \), \( \vect{K}' \)</li>
+    <li>Strong <strong>spin-orbit coupling</strong>
+        and <strong>inversion symmetry breaking</strong></li>
+    <li>Leads to opposite valley Berry curvature</li>
+    <li>Tight binding model: \( d_{z^2}, d_{xy}, d_{x^2 - y^2} \)</li>
+  </ul>
+
+  <div class="slide">
+    <p class="full center">
+      $$
+      H_0^{τ σ} \exOfK =
+        a t \left(τ k_x σ_x + k_y σ_y \right) ⊗ I_2
+        + \frac{Δ}{2} σ_z ⊗ I_2
+        - λ τ \left(σ_z - 1 \right) ⊗ S_z
+      $$
+    </p>
+
+    <p class="small full center">
+      $$
+      H_0^{τ σ} \exOfK =
+      \left[
+      \begin{matrix}
+        \dfrac{Δ}{2}                     & a t \left( τ k_x - i k_y \right) \\
+        a t \left( τ k_x + i k_y \right) & λ τ σ - \dfrac{Δ}{2}
+      \end{matrix}
+      \right]
+      $$
+    </p>
+
+    <p class="small full"><cite id="PhysRevLett.108.196802">D. Xiao, G.-B. Liu, W. Feng, X. Xu, and W. Yao, Phys. Rev. Lett. <b>108</b>, 196802 (2012).</cite></p>
+  </div>
+</div></section>
+
+<section class="slide"><h2> Energy Bands</h2><div class="content">
+  <figure class="two-thirds">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/bands-2782bb131ee6ac9bd39b3891323b3162.svg">
+    <figcaption>The eight energy bands for \( \mathrm{MoS_2} \).</figcaption>
+  </figure>
+
+  <div class="one-third omega">
+    <ul>
+      <li>\( Δ \)—band splitting</li>
+      <li>\( λ \)—spin splitting</li>
+      <li>\( τ \)—valley index</li>
+      <li>\( σ \)—spin index</li>
+    </ul>
+
+    <h3>\( \mathrm{MoS_2} \)</h3>
+
+    <ul>
+      <li>\( a t = 3.15 \: \text{Å eV} \)</li>
+      <li>\( Δ = 1.66 \: \text{eV} \)</li>
+      <li>\( 2 λ = 0.15 \: \text{eV} \)</li>
+      <li>\( μ = -0.83 \: \text{eV} \)</li>
+    </ul>
+  </div>
+
+  <p class="full omega">
+    $$
+    E_{τ σ}^n \exOfK =
+      \frac{1}{2} \left( λ τ σ
+      + n \sqrt{ (2 a t)^2 \left\lvert \vect{k} \right\rvert^2
+        + \left( Δ - λ τ σ \right)^2 } \right)
+    $$
+  </p>
+</div></section>
+
+<section class="slide"><h2> Induced Superconductivity</h2><div class="content">
+  <h3>Intervalley pairing</h3>
+
+  <figure class="half">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/superconducting_states-12a8cc85d1965d1915679471085e323d.svg">
+    <figcaption>BCS pairs for induced superconducting states.</figcaption>
+  </figure>
+
+  <div class="half omega">
+    <ul class="full omega">
+      <li>\( a^ν_{τ σ} \)—orbital operators</li>
+      <li>\( b_α \)—quasiparticle operators</li>
+      <li>BCS pairs in opposite valleys</li>
+      <li>Reduces to standard BCS Hamiltonian
+          where \( α = τ = σ \) plays the role of the spin index</li>
+      <li>Not a singlet ground state: mixture of singlet and triplet states</li>
+    </ul>
+
+    <p class="small full center omega">
+      $$
+      \begin{equation}
+        H_V = -
+          \sideset{}{'}∑_{\vK} \sideset{}{}∑_{ν, τ} Δ_ν
+          {a^ν_{-τ ↓}}^† \exOfMK
+          {a^ν_{τ ↑}}^†  \exOfK
+          + \hc
+      \end{equation}
+      $$
+    </p>
+
+    <p class="small full center omega">
+      $$
+      \begin{equation}
+        H - μ N =
+          \sideset{}{'}∑_{\vK} \sideset{}{}∑_α λ_{\vK}^α b_{\vK α}^† b_{\vK α}
+            + \sideset{}{'}∑_{\vK} \left(ξ_{\vK ↓} + λ_{\vK}^- \right) .
+      \end{equation}
+      $$
+    </p>
+  </div>
+</div></section>
+
+<section class="slide"><h2> Optical Transitions</h2><div class="content">
+  <figure class="half">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/transitions-ffbdbe966e1aeb6c298698f8cc84605c.svg">
+    <figcaption>Optical transition rates for \( H_0 \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/band_transitions-1a9b753f282e374d2b1498bd03688c37.svg">
+    <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P}^{τ σ} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle u_+ \right\rvert ∇_{\vK} H_0^{τ σ} \exOfK
+        \left\lvert u_- \right\rangle \)
+    </p>
+
+    <p>
+      \( P_±^{τ σ} \exOfK = P_x^{τ σ} ± i P_y^{τ σ} \)
+    </p>
+  </div>
+
+  <ul class="half omega">
+    <li>Right circular polarization strongly couples to \( τ = + \) valley transitions</li>
+    <li>Left circular polarization strongly couples to \( τ = - \) valley transitions</li>
+  </ul>
+
+  <p class="small full"><cite id="PhysRevLett.108.196802">D. Xiao, G.-B. Liu, W. Feng, X. Xu, and W. Yao, Phys. Rev. Lett. <b>108</b>, 196802 (2012).</cite></p>
+</div></section>
+
+<section class="slide"><h2> SC Optical Excitations</h2><div class="content">
+  <figure class="half">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-1-89368174bc230894e688b8252e68fc5e.svg">
+    <figcaption>Induced superconducting optical transition rates for \( τ = + \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-2-1221143658890feb13c07d779c52cb4f.svg">
+    <figcaption>Induced superconducting optical transition rates for \( τ = - \).</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle Ω_f \right\rvert ∇_{\vK} H^{τ σ} \exOfK
+        \left\lvert Ω \right\rangle \)
+    </p>
+
+    <p>
+      \( P_± \exOfK = P_x ± i P_y \)
+    </p>
+  </div>
+
+  <div class="half omega">
+    <p>
+       \( \left\lvert Ω \right\rangle
+       = ∏_{\vK} b_{\vK ↑} b_{-\vK ↓} \left\lvert 0 \right\rangle \)
+    </p>
+
+    <p>
+       \( \left\lvert Ω_f \right\rangle =
+         \begin{cases}
+         {c^+_α}^† \exOfK b_{-α} \exOfMK \left\lvert Ω \right\rangle &amp; k &gt; k_μ \\
+         {c^+_α}^† \exOfK b_{-α}^† \exOfMK \left\lvert Ω \right\rangle &amp; k &lt; k_μ
+         \end{cases} \)
+    </p>
+  </div>
+</div></section>
+
+<section class="slide"><h2> SC Optical Excitations</h2><div class="content">
+  <h3>Compare to normal transitions</h3>
+
+  <figure class="half">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-closeup-1-7d00c41d7a60759dd9afeff76e6f04eb.svg">
+    <figcaption>Strong induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-closeup-2-e7f803c8d763662aedc9adfb819b0c54.svg">
+    <figcaption>Weak induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+  </figure>
+
+  <ul class="full">
+    <li>Upper band excitations are now paired with lower band quasiparticle excitations</li>
+    <li>Valley-polarization coupling is retained even in the superconducting case</li>
+    <li>Contrast is reduced in an region around the chemical potential</li>
+  </ul>
 </div></section>
 
 
