@@ -4,6 +4,8 @@ layout: deck
 
 {% assign deck = site.data.deck %}
 
+$${% include tex-header.tex %}$$
+
 {% slide : Outline %}
   <div class="outline first">
     <h3>Spin lifetime</h3>
@@ -14,4 +16,222 @@ layout: deck
     <h3>Dichalcogenide superconductivity</h3>
     <div class="lattice-image"></div>
   {% endslide %}
+{% endslide %}
+
+{% slide : Dichalcogenides %}
+  <ol class="half center">
+    <li>Dichalcogenides overview</li>
+    <li>Induced superconducting phase</li>
+    <li>Optical transitions</li>
+    <li>Superconducting optical excitations</li>
+  </ol>
+
+  <div class="lattice-image two-thirds center"></div>
+{% endslide %}
+
+{% slide : Effective Hamiltonian %}
+  <div class="lattice-image half"></div>
+
+  <ul class="half omega">
+    <li>\( \mathrm{MoS_2} \), \( \mathrm{WS_2} \), \( \mathrm{MoSe_2} \), \( \mathrm{WSe_2} \)</li>
+    <li>Similar to monolayer graphene:
+        two inequivalent valleys: \( \vect{K} \), \( \vect{K}' \)</li>
+    <li>Strong <strong>spin-orbit coupling</strong>
+        and <strong>inversion symmetry breaking</strong></li>
+    <li>Leads to opposite valley Berry curvature</li>
+    <li>Tight binding model: \( d_{z^2}, d_{xy}, d_{x^2 - y^2} \)</li>
+  </ul>
+
+  {% slide div %}
+    <p class="full center">
+      $$
+      H_0^{τ σ} \exOfK =
+        a t \left(τ k_x σ_x + k_y σ_y \right) ⊗ I_2
+        + \frac{Δ}{2} σ_z ⊗ I_2
+        - λ τ \left(σ_z - 1 \right) ⊗ S_z
+      $$
+    </p>
+
+    <p class="small full center">
+      $$
+      H_0^{τ σ} \exOfK =
+      \left[
+      \begin{matrix}
+        \dfrac{Δ}{2}                     & a t \left( τ k_x - i k_y \right) \\
+        a t \left( τ k_x + i k_y \right) & λ τ σ - \dfrac{Δ}{2}
+      \end{matrix}
+      \right]
+      $$
+    </p>
+
+    <p class="small full">{% reference PhysRevLett.108.196802 %}</p>
+  {% endslide %}
+{% endslide %}
+
+{% slide : Energy Bands %}
+  <figure class="two-thirds">
+    {% image dichalcogenides/bands.svg %}
+    <figcaption>The eight energy bands for \( \mathrm{MoS_2} \).</figcaption>
+  </figure>
+
+  <div class="one-third omega">
+    <ul>
+      <li>\( Δ \)—band splitting</li>
+      <li>\( λ \)—spin splitting</li>
+      <li>\( τ \)—valley index</li>
+      <li>\( σ \)—spin index</li>
+    </ul>
+
+    <h3>\( \mathrm{MoS_2} \)</h3>
+
+    <ul>
+      <li>\( a t = 3.15 \: \text{Å eV} \)</li>
+      <li>\( Δ = 1.66 \: \text{eV} \)</li>
+      <li>\( 2 λ = 0.15 \: \text{eV} \)</li>
+      <li>\( μ = -0.83 \: \text{eV} \)</li>
+    </ul>
+  </div>
+
+  <p class="full omega">
+    $$
+    E_{τ σ}^n \exOfK =
+      \frac{1}{2} \left( λ τ σ
+      + n \sqrt{ (2 a t)^2 \left\lvert \vect{k} \right\rvert^2
+        + \left( Δ - λ τ σ \right)^2 } \right)
+    $$
+  </p>
+{% endslide %}
+
+{% slide : Induced Superconductivity %}
+  <h3>Intervalley pairing</h3>
+
+  <figure class="half">
+    {% image dichalcogenides/superconducting_states.svg %}
+    <figcaption>BCS pairs for induced superconducting states.</figcaption>
+  </figure>
+
+  <div class="half omega">
+    <ul class="full omega">
+      <li>\( a^ν_{τ σ} \)—orbital operators</li>
+      <li>\( b_α \)—quasiparticle operators</li>
+      <li>BCS pairs in opposite valleys</li>
+      <li>Reduces to standard BCS Hamiltonian
+          where \( α = τ = σ \) plays the role of the spin index</li>
+      <li>Not a singlet ground state: mixture of singlet and triplet states</li>
+    </ul>
+
+    <p class="small full center omega">
+      $$
+      \begin{equation}
+        H_V = -
+          \sideset{}{'}∑_{\vK} \sideset{}{}∑_{ν, τ} Δ_ν
+          {a^ν_{-τ ↓}}^† \exOfMK
+          {a^ν_{τ ↑}}^†  \exOfK
+          + \hc
+      \end{equation}
+      $$
+    </p>
+
+    <p class="small full center omega">
+      $$
+      \begin{equation}
+        H - μ N =
+          \sideset{}{'}∑_{\vK} \sideset{}{}∑_α λ_{\vK}^α b_{\vK α}^† b_{\vK α}
+            + \sideset{}{'}∑_{\vK} \left(ξ_{\vK ↓} + λ_{\vK}^- \right) .
+      \end{equation}
+      $$
+    </p>
+  </div>
+{% endslide %}
+
+{% slide : Optical Transitions %}
+  <figure class="half">
+    {% image dichalcogenides/transitions.svg %}
+    <figcaption>Optical transition rates for \( H_0 \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    {% image dichalcogenides/band_transitions.svg %}
+    <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P}^{τ σ} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle u_+ \right\rvert ∇_{\vK} H_0^{τ σ} \exOfK
+        \left\lvert u_- \right\rangle \)
+    </p>
+
+    <p>
+      \( P_±^{τ σ} \exOfK = P_x^{τ σ} ± i P_y^{τ σ} \)
+    </p>
+  </div>
+
+  <ul class="half omega">
+    <li>Right circular polarization strongly couples to \( τ = + \) valley transitions</li>
+    <li>Left circular polarization strongly couples to \( τ = - \) valley transitions</li>
+  </ul>
+
+  <p class="small full">{% reference PhysRevLett.108.196802 %}</p>
+{% endslide %}
+
+{% slide : SC Optical Excitations %}
+  <figure class="half">
+    {% image dichalcogenides/excitations-1.svg %}
+    <figcaption>Induced superconducting optical transition rates for \( τ = + \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    {% image dichalcogenides/excitations-2.svg %}
+    <figcaption>Induced superconducting optical transition rates for \( τ = - \).</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle Ω_f \right\rvert ∇_{\vK} H^{τ σ} \exOfK
+        \left\lvert Ω \right\rangle \)
+    </p>
+
+    <p>
+      \( P_± \exOfK = P_x ± i P_y \)
+    </p>
+  </div>
+
+  <div class="half omega">
+    <p>
+       \( \left\lvert Ω \right\rangle
+       = ∏_{\vK} b_{\vK ↑} b_{-\vK ↓} \left\lvert 0 \right\rangle \)
+    </p>
+
+    <p>
+       \( \left\lvert Ω_f \right\rangle =
+         \begin{cases}
+         {c^+_α}^† \exOfK b_{-α} \exOfMK \left\lvert Ω \right\rangle &amp; k &gt; k_μ \\
+         {c^+_α}^† \exOfK b_{-α}^† \exOfMK \left\lvert Ω \right\rangle &amp; k &lt; k_μ
+         \end{cases} \)
+    </p>
+  </div>
+{% endslide %}
+
+{% slide : SC Optical Excitations %}
+  <h3>Compare to normal transitions</h3>
+
+  <figure class="half">
+    {% image dichalcogenides/excitations-closeup-1.svg %}
+    <figcaption>Strong induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    {% image dichalcogenides/excitations-closeup-2.svg %}
+    <figcaption>Weak induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+  </figure>
+
+  <ul class="full">
+    <li>Upper band excitations are now paired with lower band quasiparticle excitations</li>
+    <li>Valley-polarization coupling is retained even in the superconducting case</li>
+    <li>Contrast is reduced in an region around the chemical potential</li>
+  </ul>
 {% endslide %}
