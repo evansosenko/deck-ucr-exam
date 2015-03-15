@@ -18,6 +18,97 @@ $${% include tex-header.tex %}$$
   {% endslide %}
 {% endslide %}
 
+{% slide#spin-lifetime : Spin lifetime %}
+  <ol class="half center">
+  </ol>
+
+  {% image spin-lifetime/device.svg class="two-thirds center" %}
+{% endslide %}
+
+{% slide : Fits %}
+  <div class="half">
+    <h3>Tunneling contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4a_difference.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4a of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="b" %}
+    </ul>
+  </div>
+
+  <div class="half omega">
+    <h3>Tunneling contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4b_difference.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4b of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="a" %}
+    </ul>
+  </div>
+
+  <p class="full omega">{% reference PhysRevLett.105.167202 --file spintronics %}</p>
+{% endslide %}
+
+{% slide : Fits %}
+  <div class="half">
+    <h3>Pinhole contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4c_parallel.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4c of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="c" %}
+    </ul>
+  </div>
+
+  <div class="half omega">
+    <h3>Transparent contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4d_difference.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4d of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="d" %}
+    </ul>
+  </div>
+
+  <p class="full omega">{% reference PhysRevLett.105.167202 --file spintronics %}</p>
+{% endslide %}
+
+{% slide : Fits %}
+  <div class="half">
+    <h3>Transparent contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4d_difference_large_lifetime.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4d of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="d_1" %}
+    </ul>
+  </div>
+
+  <div class="half omega">
+    <h3>Transparent contacts</h3>
+    <figure>
+      {% image spin-lifetime/fig_4d_difference_larger_lifetime.svg %}
+      <figcaption>Fit to parallel field data from Fig. 4d of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="small equation">
+      {% include spin-lifetime-values.html id="d_2" %}
+    </ul>
+  </div>
+
+  <p class="full omega">{% reference PhysRevLett.105.167202 --file spintronics %}</p>
+{% endslide %}
+
 {% slide : Dichalcogenides %}
   <ol class="half center">
     <li>Dichalcogenides overview</li>

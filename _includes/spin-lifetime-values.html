@@ -1,0 +1,7 @@
+{% assign values = site.data.spin-lifetime.values[include.id] %}
+
+<li>\( L = {{ values.l }} \: \text{µm} \)</li>
+<li>\( P = {{ values.p }} \)</li>
+<li>\( R_\text{C} = {{ values.r }}{% if values.r_exp %} × 10^{ {{ values.r_exp }} }{% endif %} \: \text{kΩ} \)</li>
+<li>\( τ  = {{ values.tau }}{% if values.tau_exp %} × 10^{ {{ values.tau_exp }} }{% endif %} \: \text{ps} \)</li>
+<li>\( D = {{ values.d }} \: \text{m}^2 \text{s}^{-1} \)</li>
