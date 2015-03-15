@@ -3,6 +3,12 @@
 //
 
 article.deck-container
+  .device-image
+    +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 250px, 167px)
+
+    @media #{$xga}
+      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 588px, 393px)
+
   .lattice-image
     +background-image('dichalcogenides/lattice', 250px, 191px)
 
