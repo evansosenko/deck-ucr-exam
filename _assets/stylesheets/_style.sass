@@ -40,3 +40,18 @@ article.deck-container
 
   ul.equation
     list-style: none
+
+  @media #{$xga}
+    #geometry
+      div.device-image
+        +span-columns(6)
+        +shift(3)
+
+      ul
+        +span-columns(3)
+
+        &.first
+          +shift(-9)
+
+        &.last
+          +omega
