@@ -7,13 +7,16 @@ article.deck-container
     list-style: none
 
   .device-image
-    +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 250px, 167px)
+    $width: 588px
+    $height: 393px
+
+    +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (1 / 2) * $width, (1 / 2) * $height)
 
     @media #{$medium-up}
-      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 2 * 250px, 2 * 167px)
+      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', $width, $height)
 
     @media #{$xga-up}
-      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 0.8 * 588px, 0.8 * 393px)
+      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (4 / 5) * $width, (4 /5) * $height)
 
   .lattice-image
     +background-image('dichalcogenides/lattice', 250px, 191px)
