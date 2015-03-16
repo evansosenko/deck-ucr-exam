@@ -53,7 +53,7 @@ article.deck-container
         div
           +shift(-12)
 
-  .geometry
+  .geometry .content
     ul.equation
       +small
 
@@ -68,6 +68,10 @@ article.deck-container
 
         &.last
           +omega
+
+      > div:last-of-type
+        +full
+        +omega
 
     @media #{$xga-up}
       div.device-image
