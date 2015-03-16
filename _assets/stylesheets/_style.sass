@@ -6,23 +6,23 @@ article.deck-container
   .device-image
     +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 250px, 167px)
 
-    @media #{$medium}
+    @media #{$medium-up}
       +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 2 * 250px, 2 * 167px)
 
-    @media #{$xga}
+    @media #{$xga-up}
       +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 0.8 * 588px, 0.8 * 393px)
 
   .lattice-image
     +background-image('dichalcogenides/lattice', 250px, 191px)
 
-    @media #{$xga}
+    @media #{$xga-up}
       +background-image('dichalcogenides/lattice', 400px, 343px)
 
   ul.equation
     list-style: none
 
   .outline
-    @media #{$xga}
+    @media #{$xga-up}
       display: flex
       align-items: center
 
@@ -45,7 +45,7 @@ article.deck-container
           +shift(-12)
 
   #geometry
-    @media #{$medium} and (max-width: 1023px)
+    @media #{$medium-only}
       div.device-image
         +span-columns(12)
         +omega
@@ -56,7 +56,7 @@ article.deck-container
         &.last
           +omega
 
-    @media #{$xga}
+    @media #{$xga-up}
       div.device-image
         +span-columns(6)
         +shift(3)
@@ -67,8 +67,11 @@ article.deck-container
         &.first
           +shift(-9)
 
+        &.last
+          +omega
+
   .fits
-    @media #{$medium} and (max-width: 1023px)
+    @media #{$medium-only}
       ul.equation
         list-style: none
 
