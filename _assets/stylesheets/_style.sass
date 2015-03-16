@@ -19,10 +19,16 @@ article.deck-container
       +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (4 / 5) * $width, (4 /5) * $height)
 
   .lattice-image
-    +background-image('dichalcogenides/lattice', 250px, 191px)
+    $width: 500px
+    $height: 429px
+
+    +background-image('dichalcogenides/lattice', (1 / 2) * $width, (1 / 2) * $height)
+
+    @media #{$medium-up}
+      +background-image('dichalcogenides/lattice', $width, $height)
 
     @media #{$xga-up}
-      +background-image('dichalcogenides/lattice', 400px, 343px)
+      +background-image('dichalcogenides/lattice', (4 / 5) * $width, (4 / 5) * $height)
 
   .outline
     @media #{$xga-up}
