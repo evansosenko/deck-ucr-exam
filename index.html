@@ -55,7 +55,43 @@ $${% include tex-header.tex %}$$
   </div>
 {% endslide %}
 
-{% slide : Solution %}
+{% slide.solution : Solution %}
+  <h3>Non-local resistance</h3>
+
+  <p>$$Δ \rNL = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
+
+  <ul class="equation">
+    <li>\( r = \frac{R_F + R_C}{\rSQ} W \)</li>
+    <li>\( \rSQ = W / σ^N \)</li>
+    <li>\( R_N = \frac{λ}{W L} \frac{1}{σ^N} \)</li>
+  </ul>
+
+  <p>
+    $$
+    \begin{multline}
+      f = \re \left\{ \left(
+            \vphantom{
+              \frac{
+                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
+              }{\sqrt{1 + i ω τ}}
+            }
+            2 \left[ \sqrt{1 + i ω τ} + (λ / r) \right]
+            e^{\left( L / λ \right) \sqrt{1 + i ω τ}}
+            \right. \right. \\ \left. \left.
+            + (λ / r)^2 \frac{
+                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
+              }{\sqrt{1 + i ω τ}}
+          \right)^{-1} \right\} .
+    \end{multline}
+    $$
+  </p>
+
+  <h3>Only scales that appear in \( f \)</h3>
+  <ul class="equation">
+    <li>\( L / λ \)</li>
+    <li>\( λ / r \)</li>
+    <li>\( ω τ \)</li>
+  </ul>
 {% endslide %}
 
 {% slide.fits : Fits %}

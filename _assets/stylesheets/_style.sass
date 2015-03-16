@@ -98,7 +98,32 @@ article.deck-container
         +full
         +omega
 
+  .solution .content
+    ul.equation:last-of-type
+      +inline
+
+    @media #{$medium-up}
+      ul.equation
+        +inline
+        +full($center: true)
+        +omega
+
+      p
+        +full($center: true)
+        +omega
+
+      h3
+        text-align: center
+
   .fits .content
+    @media #{$medium-only}
+      ul.equation
+        list-style: none
+
+        li
+          display: inline-block
+          margin-right: 2rem
+
     @media #{$xga-up}
       > div
         +half
@@ -112,14 +137,6 @@ article.deck-container
       > p
         +full
         +omega
-
-    @media #{$medium-only}
-      ul.equation
-        list-style: none
-
-        li
-          display: inline-block
-          margin-right: 2rem
 
   .bands .content
     @media #{$medium-only}
