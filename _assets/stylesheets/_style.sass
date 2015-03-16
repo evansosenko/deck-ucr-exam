@@ -3,6 +3,9 @@
 //
 
 article.deck-container
+  ul.equation
+    list-style: none
+
   .device-image
     +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 250px, 167px)
 
@@ -17,9 +20,6 @@ article.deck-container
 
     @media #{$xga-up}
       +background-image('dichalcogenides/lattice', 400px, 343px)
-
-  ul.equation
-    list-style: none
 
   .outline
     @media #{$xga-up}
@@ -44,7 +44,10 @@ article.deck-container
         div
           +shift(-12)
 
-  #geometry
+  .geometry
+    ul.equation
+      +small
+
     @media #{$medium-only}
       div.device-image
         +span-columns(12)
@@ -70,7 +73,25 @@ article.deck-container
         &.last
           +omega
 
-  .fits
+      > div:last-of-type
+        +full
+        +omega
+
+  .fits .content
+    @media #{$xga-up}
+      > div
+        +half
+
+        &:last-of-type
+          +omega
+
+        ul.equation
+          +small
+
+      > p
+        +full
+        +omega
+
     @media #{$medium-only}
       ul.equation
         list-style: none
