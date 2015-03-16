@@ -6,6 +6,9 @@ article.deck-container
   .device-image
     +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 250px, 167px)
 
+    @media #{$medium}
+      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 2 * 250px, 2 * 167px)
+
     @media #{$xga}
       +background-image('spin-lifetime/tikz-nonlocal_spin_valve', 0.8 * 588px, 0.8 * 393px)
 
@@ -42,6 +45,17 @@ article.deck-container
           +shift(-12)
 
   #geometry
+    @media #{$medium} and (max-width: 1023px)
+      div.device-image
+        +span-columns(12)
+        +omega
+
+      ul
+        +span-columns(5)
+
+        &.last
+          +omega
+
     @media #{$xga}
       div.device-image
         +span-columns(6)
@@ -53,5 +67,11 @@ article.deck-container
         &.first
           +shift(-9)
 
-        &.last
-          +omega
+  .fits
+    @media #{$medium} and (max-width: 1023px)
+      ul.equation
+        list-style: none
+
+        li
+          display: inline-block
+          margin-right: 2rem
