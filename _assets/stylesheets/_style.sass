@@ -15,8 +15,11 @@ article.deck-container
     @media #{$xga}
       +background-image('dichalcogenides/lattice', 400px, 343px)
 
-  @media #{$xga}
-    .outline
+  ul.equation
+    list-style: none
+
+  .outline
+    @media #{$xga}
       display: flex
       align-items: center
 
@@ -38,11 +41,8 @@ article.deck-container
         div
           +shift(-12)
 
-  ul.equation
-    list-style: none
-
-  @media #{$xga}
-    #geometry
+  #geometry
+    @media #{$xga}
       div.device-image
         +span-columns(6)
         +shift(3)
