@@ -120,3 +120,31 @@ article.deck-container
         li
           display: inline-block
           margin-right: 2rem
+
+  .bands .content
+    @media #{$medium-only}
+      > div
+        +two-thirds($center: true)
+
+        > ul
+          +one-fourth
+          margin-left: 0
+
+          &:last-of-type
+            +omega
+
+        > h3
+          +half
+          text-align: center
+
+      > p
+        +full
+        +omega
+
+  .sc-excitations .content
+    @media #{$medium-only}
+      > div
+        +half
+
+        &:last-of-type
+          +omega
