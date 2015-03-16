@@ -115,6 +115,18 @@ article.deck-container
       h3
         text-align: center
 
+  .regimes .content
+    @media #{$medium-up}
+      > div
+        +half
+
+        &:last-of-type
+          margin-bottom: 2rem
+          +omega
+
+      h3, p
+        text-align: center
+
   .fits .content
     @media #{$medium-only}
       ul.equation

@@ -150,7 +150,21 @@ $${% include tex-header.tex %}$$
   <p>{% reference PhysRevLett.105.167202 --file spintronics %}</p>
 {% endslide %}
 
-{% slide : Regimes %}
+{% slide.regimes : Regimes %}
+  <div>
+    <h3>Zero field</h3>
+    <p>$$Δ \rNL = \left( P_Σ^L \right)^2 R_N e^{- L / λ}$$</p>
+  </div>
+
+  <div>
+    <h3>Tunneling contacts</h3>
+    <p>$$f^∞ = \re{\frac{e^{- \left( L / λ \right) \sqrt{1 + i ω τ}}}{2 \sqrt{1 + i ω τ}}}$$</p>
+  </div>
+
+  <h3>Transparent contacts</h3>
+  <p>Fits independent of lifetime</p>
+  <p>Zeros determined by
+    $$L \sqrt{\frac{D}{2 ω}} + \frac{π}{4} = \frac{n π}{2}$$</p>
 {% endslide %}
 
 {% slide.fits : Fits: \( τ \) Independent Limit %}
