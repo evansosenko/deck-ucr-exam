@@ -112,12 +112,13 @@ article.deck-container
         +full($center: true)
         +omega
 
-      p
+      p:not(:last-of-type)
         +full($center: true)
         +omega
 
-      h3
-        text-align: center
+      > p:last-of-type
+        +full
+        +omega
 
   .regimes .content
     @media #{$medium-up}
@@ -128,8 +129,12 @@ article.deck-container
           margin-bottom: 2rem
           +omega
 
-      h3, p
+      h3, p:not(:last-of-type)
         text-align: center
+
+      > p:last-of-type
+        +full
+        +omega
 
   .fits .content
     @media #{$medium-only}
