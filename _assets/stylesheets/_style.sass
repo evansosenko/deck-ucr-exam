@@ -53,12 +53,21 @@ article.deck-container
         div
           +shift(-12)
 
-  #spin-lifetime
-    ol
-      +half($center: true)
+  #spin-lifetime .content
+    > div:first-of-type
+      +one-third
+
+    > div:last-of-type
+      +two-thirds
+      +omega
 
     img
       +two-thirds($center: true)
+      +omega
+
+    p
+      +full
+      +omega
 
   .geometry .content
     ul.equation

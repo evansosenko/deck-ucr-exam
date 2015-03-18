@@ -6,7 +6,7 @@ layout: deck
 
 $${% include tex-header.tex %}$$
 
-{% slide : Outline %}
+{% slide : Two dimensional systems %}
   <div class="outline first">
     <h3>Spin lifetime and Hanle curve fitting</h3>
     {% image spin-lifetime/device.svg %}
@@ -19,14 +19,29 @@ $${% include tex-header.tex %}$$
 {% endslide %}
 
 {% slide#spin-lifetime : Spin lifetime %}
-  <ol>
-    <li>Overview of model</li>
-    <li>Analytic solution</li>
-    <li>Hanle fits</li>
-    <li>Regimes</li>
-  </ol>
+  <div>
+    <h3>Outline</h3>
+    <ol>
+      <li>Motivation</li>
+      <li>Model and solution</li>
+      <li>Hanle curve fitting</li>
+      <li>Regimes and results</li>
+    </ol>
+  </div>
+
+  {% slide div %}
+    <h3>Motivation</h3>
+    <ol>
+      <li>Theoretical lifetime predictions longer than measured values:
+        \( \text{ms} \) vs. \( \text{ps} \)</li>
+      <li>Finite contact resistance mismatch: a potential candidate</li>
+      <li>Unified analytic solution for fitting data in all limits</li>
+    </ol>
+  {% endslide %}
 
   {% image spin-lifetime/device.svg %}
+
+  <p>{% reference PhysRevB.89.245436 --file spintronics %}</p>
 {% endslide %}
 
 {% slide.geometry : Device geometry %}
