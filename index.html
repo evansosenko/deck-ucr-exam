@@ -332,6 +332,48 @@ $${% include tex-header.tex %}$$
   </p>
 {% endslide %}
 
+{% capture dichalcogenides_optical_transitions %}
+{% slide : Optical Transitions %}
+  <figure class="half">
+    {% image dichalcogenides/transitions.svg %}
+    <figcaption>Optical transition rates for \( H_0 \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    {% image dichalcogenides/band_transitions.svg %}
+    <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P}^{τ σ} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle u_+ \right\rvert ∇_{\vK} H_0^{τ σ} \exOfK
+        \left\lvert u_- \right\rangle \)
+    </p>
+
+    <p>
+      \( P_±^{τ σ} \exOfK = P_x^{τ σ} ± i P_y^{τ σ} \)
+    </p>
+  </div>
+
+  <ul class="half omega">
+    <li>Right circular polarization strongly couples to \( τ = + \) valley transitions</li>
+    <li>Left circular polarization strongly couples to \( τ = - \) valley transitions</li>
+  </ul>
+
+  <p class="small full">{% reference PhysRevLett.108.196802 %}</p>
+{% endslide %}
+{% endcapture %}
+
+{{ dichalcogenides_optical_transitions }}
+
+{% slide : Vally Hall effect %}
+{% endslide %}
+
+{% slide : BCS Superconductivity %}
+{% endslide %}
+
 {% slide : Induced Superconductivity %}
   <h3>Intervalley pairing</h3>
 
@@ -374,37 +416,7 @@ $${% include tex-header.tex %}$$
   </div>
 {% endslide %}
 
-{% slide : Optical Transitions %}
-  <figure class="half">
-    {% image dichalcogenides/transitions.svg %}
-    <figcaption>Optical transition rates for \( H_0 \).</figcaption>
-  </figure>
-
-  <figure class="half omega">
-    {% image dichalcogenides/band_transitions.svg %}
-    <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
-  </figure>
-
-  <div class="half">
-    <p>
-      \( \vect{P}^{τ σ} \exOfK =
-        \frac{m_0}{ħ}
-        \left\langle u_+ \right\rvert ∇_{\vK} H_0^{τ σ} \exOfK
-        \left\lvert u_- \right\rangle \)
-    </p>
-
-    <p>
-      \( P_±^{τ σ} \exOfK = P_x^{τ σ} ± i P_y^{τ σ} \)
-    </p>
-  </div>
-
-  <ul class="half omega">
-    <li>Right circular polarization strongly couples to \( τ = + \) valley transitions</li>
-    <li>Left circular polarization strongly couples to \( τ = - \) valley transitions</li>
-  </ul>
-
-  <p class="small full">{% reference PhysRevLett.108.196802 %}</p>
-{% endslide %}
+{{ dichalcogenides_optical_transitions }}
 
 {% slide.sc-excitations : SC Optical Excitations %}
   <figure class="half">
@@ -473,4 +485,18 @@ $${% include tex-header.tex %}$$
 {% endslide %}
 
 {% slide : Future Work %}
+  <h3>Induced superconductivity</h3>
+  <ul>
+    <li>Only looked at \( \mathrm{MoS_2} \)</li>
+    <li>Can tune the parameters to understand how they affect the physics</li>
+    <li>Look at other properties of this state, e.g., magnetic susceptibility</li>
+  </ul>
+
+  <h3>Intrinsic superconductivity</h3>
+  <ul>
+    <li>Derived from density-density interactions</li>
+    <li>Already have the projected interaction term</li>
+    <li>Apply mean-field and an analogous analysis</li>
+    <li>Both intervalley and intravalley pairing</li>
+  </ul>
 {% endslide %}
