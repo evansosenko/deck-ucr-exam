@@ -21,11 +21,13 @@ article.deck-container
   .crystal-image
     $width: 1000px
     $height: 522px
+    $v-width: 500px
+    $v-height: 954px
 
-    +background-image('dichalcogenides/crystal', (1 / 2) * $width, (1 / 2) * $height)
+    +background-image('dichalcogenides/crystal-vertical', (2 / 3) * $v-width, (2 / 3) * $v-height)
 
     @media #{$medium-up}
-      +background-image('dichalcogenides/crystal', $width, $height)
+      +background-image('dichalcogenides/crystal-vertical', $v-width, $v-height)
 
     @media #{$xga-up}
       +background-image('dichalcogenides/crystal', (4 / 5) * $width, (4 / 5) * $height)
