@@ -18,6 +18,18 @@ article.deck-container
     @media #{$xga-up}
       +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (4 / 5) * $width, (4 /5) * $height)
 
+  .crystal-image
+    $width: 1000px
+    $height: 522px
+
+    +background-image('dichalcogenides/crystal', (1 / 2) * $width, (1 / 2) * $height)
+
+    @media #{$medium-up}
+      +background-image('dichalcogenides/crystal', $width, $height)
+
+    @media #{$xga-up}
+      +background-image('dichalcogenides/crystal', (4 / 5) * $width, (4 / 5) * $height)
+
   .lattice-image
     $width: 500px
     $height: 429px
