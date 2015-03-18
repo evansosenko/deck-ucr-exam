@@ -68,12 +68,13 @@ article.deck-container
           +shift(-12)
 
   #spin-lifetime .content
-    > div:first-of-type
-      +one-third
+    @media #{$medium-up}
+      > div:first-of-type
+        +one-third
 
-    > div:last-of-type
-      +two-thirds
-      +omega
+      > div:last-of-type
+        +two-thirds
+        +omega
 
     img
       +two-thirds($center: true)
@@ -209,3 +210,15 @@ article.deck-container
 
         &:last-of-type
           +omega
+
+  #dichalcogenides .content
+    @media #{$medium-up}
+      div.one-third
+        +one-third
+
+      div.two-thirds
+        +two-thirds
+        +omega
+
+      div.full.center
+        +full($center: true)
