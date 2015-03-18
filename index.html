@@ -22,7 +22,7 @@
   <meta property="og:site_name" content="evansosenko.com" />
 
 
-<meta property="og:updated_time" content="2015-03-18T04:51:08+00:00" />
+<meta property="og:updated_time" content="2015-03-18T05:42:18+00:00" />
 
 
   <meta property="og:locale" content="en_US" />
@@ -192,7 +192,7 @@ $$
     <h3>Motivation</h3>
     <ol>
       <li>Theoretical lifetime predictions longer than measured values:
-        \( \text{ms} \) vs. \( \text{ps} \)</li>
+          \( \text{ms} \) vs. \( \text{ps} \)</li>
       <li>Finite contact resistance mismatch: a potential candidate</li>
       <li>Unified analytic solution for fitting data in all limits</li>
     </ol>
@@ -203,77 +203,8 @@ $$
   <p><cite id="PhysRevB.89.245436">E. Sosenko, H. Wei, and V. Aji, Phys. Rev. B <b>89</b>, 245436 (2014).</cite></p>
 </div></section>
 
-<section class="slide geometry"><h2>Device geometry</h2><div class="content">
-  <div class="device-image"></div>
 
-  <ul class="equation first">
-    <li>\( L \) : contact spacing</li>
-    <li>\( D \) : diffusion constant</li>
-    <li>\( τ \) : spin lifetime</li>
-    <li>\( λ = \sqrt{D τ} \)</li>
-    <li>\( ω = g μ_B B / ħ \)</li>
-  </ul>
 
-  <ul class="equation last">
-    <li>\( μ_s = \frac{1}{2} \left( μ_↑ - μ_↓ \right) \)</li>
-    <li>\( J_{↑↓} = σ_{↑↓} ∇μ_{↑↓} \)</li>
-    <li>\( J_{↑↓}^C = Σ_{↑↓} \left( μ^N_{↑↓} - μ^F_{↑↓} \right)_c \)</li>
-    <li>\( J = J_↑ + J_↓ \)</li>
-    <li>\( J_s = J_↑ - J_↓ \)</li>
-  </ul>
-
-  <div>
-    <p>$$D ∇^2 μ_s - \frac{μ_s}{τ} + ω × μ_s = 0$$</p>
-    <p>$$V ∝ μ_s^N(x = L)$$</p>
-    <p>$$R_\text{NL} = V / I$$</p>
-  </div>
-
-  <p>
-    <cite id="ActaPhysicaSlovaca.57.4_5.565-907">J. Fabian, A. Matos-Abiague, C. Ertler, P. Stano, and I. Žutić, Acta Physica Slovaca <b>57</b>, 565 (2007).</cite><br />
-    <cite id="PhysRevB.37.5312">M. Johnson and R. H. Silsbee, Phys. Rev. B <b>37</b>, 5312 (1988).</cite><br />
-    <cite id="PhysRevB.67.052409">S. Takahashi and S. Maekawa, Phys. Rev. B <b>67</b>, 052409 (2003).</cite><br />
-    <cite id="PhysRevB.80.214427">M. Popinciuc, C. Józsa, P. J. Zomer, N. Tombros, A. Veligura, H. T. Jonkman, and B. J. van Wees, Phys. Rev. B <b>80</b>, 214427 (2009).</cite>
-  </p>
-</div></section>
-
-<section class="slide solution"><h2>Non-local resistance</h2><div class="content">
-  <p>$$Δ \rNL = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
-
-  <ul class="equation">
-    <li>\( r = \frac{R_F + R_C}{\rSQ} W \)</li>
-    <li>\( \rSQ = W / σ^N \)</li>
-    <li>\( R_N = \frac{λ}{W L} \frac{1}{σ^N} \)</li>
-  </ul>
-
-  <p>
-    $$
-    \begin{multline}
-      f = \re \left\{ \left(
-            \vphantom{
-              \frac{
-                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
-              }{\sqrt{1 + i ω τ}}
-            }
-            2 \left[ \sqrt{1 + i ω τ} + (λ / r) \right]
-            e^{\left( L / λ \right) \sqrt{1 + i ω τ}}
-            \right. \right. \\ \left. \left.
-            + (λ / r)^2 \frac{
-                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
-              }{\sqrt{1 + i ω τ}}
-          \right)^{-1} \right\} .
-    \end{multline}
-    $$
-  </p>
-
-  <p>Only scales that appear in \( f \)</p>
-  <ul class="equation">
-    <li>\( L / λ \)</li>
-    <li>\( λ / r \)</li>
-    <li>\( ω τ \)</li>
-  </ul>
-
-  <p><cite id="PhysRevB.89.245436">E. Sosenko, H. Wei, and V. Aji, Phys. Rev. B <b>89</b>, 245436 (2014).</cite></p>
-</div></section>
 
 <section class="slide fits"><h2>Fits</h2><div class="content">
   <div>
@@ -316,6 +247,145 @@ $$
 
   <p><cite id="PhysRevLett.105.167202">W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A. G. Swartz, and R. K. Kawakami, Phys. Rev. Lett. <b>105</b>, 167202 (2010).</cite></p>
 </div></section>
+
+
+<section class="slide geometry"><h2>Device geometry</h2><div class="content">
+  <div class="device-image"></div>
+
+  <ul class="equation first">
+    <li>\( L \) : contact spacing</li>
+    <li>\( D \) : diffusion constant</li>
+    <li>\( τ \) : spin lifetime</li>
+    <li>\( λ = \sqrt{D τ} \)</li>
+    <li>\( ω = g μ_B B / ħ \)</li>
+  </ul>
+
+  <ul class="equation last">
+    <li>\( μ_s = \frac{1}{2} \left( μ_↑ - μ_↓ \right) \)</li>
+    <li>\( J_{↑↓} = σ_{↑↓} ∇μ_{↑↓} \)</li>
+    <li>\( J_{↑↓}^C = Σ_{↑↓} \left( μ^N_{↑↓} - μ^F_{↑↓} \right)_c \)</li>
+    <li>\( J = J_↑ + J_↓ \)</li>
+    <li>\( J_s = J_↑ - J_↓ \)</li>
+  </ul>
+
+  <div>
+    <p>$$D ∇^2 μ_s - \frac{μ_s}{τ} + ω × μ_s = 0$$</p>
+    <p>$$V ∝ μ_s^N(x = L)$$</p>
+    <p>$$R_\text{NL} = V / I$$</p>
+  </div>
+
+  <p>
+    <cite id="ActaPhysicaSlovaca.57.4_5.565-907">J. Fabian, A. Matos-Abiague, C. Ertler, P. Stano, and I. Žutić, Acta Physica Slovaca <b>57</b>, 565 (2007).</cite><br />
+    <cite id="PhysRevB.37.5312">M. Johnson and R. H. Silsbee, Phys. Rev. B <b>37</b>, 5312 (1988).</cite><br />
+    <cite id="PhysRevB.67.052409">S. Takahashi and S. Maekawa, Phys. Rev. B <b>67</b>, 052409 (2003).</cite><br />
+    <cite id="PhysRevB.80.214427">M. Popinciuc, C. Józsa, P. J. Zomer, N. Tombros, A. Veligura, H. T. Jonkman, and B. J. van Wees, Phys. Rev. B <b>80</b>, 214427 (2009).</cite>
+  </p>
+</div></section>
+
+<section class="slide"><h2> Motivation for solution</h2><div class="content">
+  <h3>Existing results</h3>
+  <p>$$\rNL ∝ \re{\frac{e^{- \left( L / λ \right) \sqrt{1 + i ω τ}}}{2 \sqrt{1 + i ω τ}}}$$</p>
+  <p>$$\rNL ∝ \int_0^∞ \frac{1}{\sqrt{4 π D t}}
+       \exp{\left[ - \frac{L^2}{4 D t} \right]} e^{-t / τ} \cos{ω t} \: dt$$</p>
+
+  <ul>
+    <li>All existing analytic expressions ignore contact resistance</li>
+    <li>Assume infinite resistance for convenience</li>
+    <li>Integral form widely used but difficult to fit</li>
+    <li>Only a numeric treatment of finite contact resistance</li>
+  </ul>
+
+  <h3>Our approach</h3>
+  <ul>
+    <li>Finite contact resistance</li>
+    <li>Exact analytic expression</li>
+    <li>Matches previous approaches in appropriate limits</li>
+  </ul>
+
+</div></section>
+
+<section class="slide solution"><h2>Non-local resistance</h2><div class="content">
+  <p>$$Δ \rNL = 2 P^2 R_N \left\lvert f \right\rvert$$</p>
+
+  <ul class="equation">
+    <li>\( r = \frac{R_F + R_C}{\rSQ} W \)</li>
+    <li>\( \rSQ = W / σ^N \)</li>
+    <li>\( R_N = \frac{λ}{W L} \frac{1}{σ^N} \)</li>
+  </ul>
+
+  <p>
+    $$
+    \begin{multline}
+      f = \re \left\{ \left(
+            \vphantom{
+              \frac{
+                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
+              }{\sqrt{1 + i ω τ}}
+            }
+            2 \left[ \sqrt{1 + i ω τ} + (λ / r) \right]
+            e^{\left( L / λ \right) \sqrt{1 + i ω τ}}
+            \right. \right. \\ \left. \left.
+            + (λ / r)^2 \frac{
+                \sinh{ \left[ \left( L / λ \right) \sqrt{1 + i ω τ} \right] }
+              }{\sqrt{1 + i ω τ}}
+          \right)^{-1} \right\} .
+    \end{multline}
+    $$
+  </p>
+
+  <p>Only scales that appear in \( f \)</p>
+  <ul class="equation">
+    <li>\( L / λ \)</li>
+    <li>\( λ / r \)</li>
+    <li>\( ω τ \)</li>
+  </ul>
+
+  <p><cite id="PhysRevB.89.245436">E. Sosenko, H. Wei, and V. Aji, Phys. Rev. B <b>89</b>, 245436 (2014).</cite></p>
+</div></section>
+
+
+<section class="slide fits"><h2>Fits</h2><div class="content">
+  <div>
+    <h3>Tunneling contacts</h3>
+    <figure>
+      <img src="https://io.evansosenko.com/deck-ucr-exam/assets/spin-lifetime/fig_4a_difference-badc65bc50e720ebf96f527693143a21.svg">
+      <figcaption>Fit to parallel field data from Fig. 4a of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="equation">
+      
+
+<li>\( L = 5.5 \: \text{µm} \)</li>
+<li>\( P = 0.1 \)</li>
+<li>\( R_\text{C} = 6.7 × 10^{ 6 } \: \text{kΩ} \)</li>
+<li>\( τ  = 451.84 \: \text{ps} \)</li>
+<li>\( D = 0.01 \: \text{m}^2 \text{s}^{-1} \)</li>
+
+    </ul>
+  </div>
+
+  <div>
+    <h3>Tunneling contacts</h3>
+    <figure>
+      <img src="https://io.evansosenko.com/deck-ucr-exam/assets/spin-lifetime/fig_4b_difference-b8e796932438a64aaba2a5f61f8441c7.svg">
+      <figcaption>Fit to parallel field data from Fig. 4b of W. Han, et al.</figcaption>
+    </figure>
+
+    <ul class="equation">
+      
+
+<li>\( L = 2.1 \: \text{µm} \)</li>
+<li>\( P = 0.19 \)</li>
+<li>\( R_\text{C} = 2.03 × 10^{ 7 } \: \text{kΩ} \)</li>
+<li>\( τ  = 514.3 \: \text{ps} \)</li>
+<li>\( D = 0.02 \: \text{m}^2 \text{s}^{-1} \)</li>
+
+    </ul>
+  </div>
+
+  <p><cite id="PhysRevLett.105.167202">W. Han, K. Pi, K. M. McCreary, Y. Li, J. J. I. Wong, A. G. Swartz, and R. K. Kawakami, Phys. Rev. Lett. <b>105</b>, 167202 (2010).</cite></p>
+</div></section>
+
 
 <section class="slide fits"><h2>Fits</h2><div class="content">
   <div>
@@ -370,10 +440,10 @@ $$
     <p>$$f^∞ = \re{\frac{e^{- \left( L / λ \right) \sqrt{1 + i ω τ}}}{2 \sqrt{1 + i ω τ}}}$$</p>
   </div>
 
-  <h3>Transparent contacts</h3>
-  <p>Fits independent of lifetime</p>
+  <h3>Fits independent of lifetime</h3>
+  <p>\( λ / r ≫ \sqrt{ω τ} ≫ 1 \)</p>
   <p>Zeros determined by
-    $$L \sqrt{\frac{D}{2 ω}} + \frac{π}{4} = \frac{n π}{2}$$</p>
+     $$L \sqrt{\frac{D}{2 ω}} + \frac{π}{4} = \frac{n π}{2}$$</p>
 
   <p><cite id="PhysRevB.89.245436">E. Sosenko, H. Wei, and V. Aji, Phys. Rev. B <b>89</b>, 245436 (2014).</cite></p>
 </div></section>
@@ -505,6 +575,48 @@ $$
   </p>
 </div></section>
 
+
+
+
+<section class="slide"><h2> Optical Transitions</h2><div class="content">
+  <figure class="half">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/transitions-2ac66b0df5994a46de3292d83e96aaf4.svg">
+    <figcaption>Optical transition rates for \( H_0 \).</figcaption>
+  </figure>
+
+  <figure class="half omega">
+    <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/band_transitions-d95c1febe421fdce7a4db3ab44a0f982.svg">
+    <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
+  </figure>
+
+  <div class="half">
+    <p>
+      \( \vect{P}^{τ σ} \exOfK =
+        \frac{m_0}{ħ}
+        \left\langle u_+ \right\rvert ∇_{\vK} H_0^{τ σ} \exOfK
+        \left\lvert u_- \right\rangle \)
+    </p>
+
+    <p>
+      \( P_±^{τ σ} \exOfK = P_x^{τ σ} ± i P_y^{τ σ} \)
+    </p>
+  </div>
+
+  <ul class="half omega">
+    <li>Right circular polarization strongly couples to \( τ = + \) valley transitions</li>
+    <li>Left circular polarization strongly couples to \( τ = - \) valley transitions</li>
+  </ul>
+
+  <p class="small full"><cite id="PhysRevLett.108.196802">D. Xiao, G.-B. Liu, W. Feng, X. Xu, and W. Yao, Phys. Rev. Lett. <b>108</b>, 196802 (2012).</cite></p>
+</div></section>
+
+
+<section class="slide"><h2> Vally Hall effect</h2><div class="content">
+</div></section>
+
+<section class="slide"><h2> BCS Superconductivity</h2><div class="content">
+</div></section>
+
 <section class="slide"><h2> Induced Superconductivity</h2><div class="content">
   <h3>Intervalley pairing</h3>
 
@@ -547,6 +659,7 @@ $$
   </div>
 </div></section>
 
+
 <section class="slide"><h2> Optical Transitions</h2><div class="content">
   <figure class="half">
     <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/transitions-2ac66b0df5994a46de3292d83e96aaf4.svg">
@@ -579,6 +692,7 @@ $$
   <p class="small full"><cite id="PhysRevLett.108.196802">D. Xiao, G.-B. Liu, W. Feng, X. Xu, and W. Yao, Phys. Rev. Lett. <b>108</b>, 196802 (2012).</cite></p>
 </div></section>
 
+
 <section class="slide sc-excitations"><h2>SC Optical Excitations</h2><div class="content">
   <figure class="half">
     <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-1-ce5c84c570cabaf8c00c72fb908407b7.svg">
@@ -609,7 +723,7 @@ $$
        = ∏_{\vK} b_{\vK ↑} b_{-\vK ↓} \left\lvert 0 \right\rangle \)
     </p>
 
-    <p>
+    <p class="small">
        \( \left\lvert Ω_f \right\rangle =
          \begin{cases}
          {c^+_α}^† \exOfK b_{-α} \exOfMK \left\lvert Ω \right\rangle &amp; k &gt; k_μ \\
@@ -624,12 +738,18 @@ $$
 
   <figure class="half">
     <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-closeup-1-484cf02f017530e35a387ed06ef0574c.svg">
-    <figcaption>Strong induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+    <figcaption>
+      Strong induced superconducting optical transition rates.
+      Dashed lines are \( H_0 \) transitions.
+    </figcaption>
   </figure>
 
   <figure class="half omega">
     <img src="https://io.evansosenko.com/deck-ucr-exam/assets/dichalcogenides/excitations-closeup-2-e117b12b27b46a1b973edc779921ef32.svg">
-    <figcaption>Weak induced superconducting optical transition rates. Dashed lines are \( H_0 \) transitions.</figcaption>
+    <figcaption>
+      Weak induced superconducting optical transition rates.
+      Dashed lines are \( H_0 \) transitions.
+    </figcaption>
   </figure>
 
   <ul class="full">
@@ -640,6 +760,20 @@ $$
 </div></section>
 
 <section class="slide"><h2> Future Work</h2><div class="content">
+  <h3>Induced superconductivity</h3>
+  <ul>
+    <li>Only looked at \( \mathrm{MoS_2} \)</li>
+    <li>Can tune the parameters to understand how they affect the physics</li>
+    <li>Look at other properties of this state, e.g., magnetic susceptibility</li>
+  </ul>
+
+  <h3>Intrinsic superconductivity</h3>
+  <ul>
+    <li>Derived from density-density interactions</li>
+    <li>Already have the projected interaction term</li>
+    <li>Apply mean-field and an analogous analysis</li>
+    <li>Both intervalley and intravalley pairing</li>
+  </ul>
 </div></section>
 
 
