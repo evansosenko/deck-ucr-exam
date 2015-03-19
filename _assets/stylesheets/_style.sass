@@ -6,7 +6,8 @@
   @each $size in $sizes
     $w: nth($size, 2)
     $h: ($height / $width) * $w
-    +background-image($src, $w, $h)
+    @media #{nth($size, 1)}
+      +background-image($src, $w, $h)
 
 article.deck-container
   ul.equation
