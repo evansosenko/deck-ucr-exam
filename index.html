@@ -381,6 +381,35 @@ $${% include tex-header.tex %}$$
 {{ dichalcogenides_optical_transitions }}
 
 {% slide : Vally Hall effect %}
+    <figure class="half">
+      {% image dichalcogenides/hall.svg %}
+      <figcaption>Valley hall effect for electrons.</figcaption>
+    </figure>
+
+    <figure class="half omega">
+      {% image dichalcogenides/band_transitions.svg %}
+      <figcaption>Optical transitions strongly coupled to light polarization.</figcaption>
+    </figure>
+
+    <div class="half">
+      <h3 class="">Semiclassical equations</h3>
+      <p>\( \dot{\vect{r}} = ∇_{\vK} E \exOfK - \dot{\vect{k}} × \vect{Ω} \exOfK \)</p>
+      <p>\( \dot{\vect{k}} = - e \vect{E} - e \dot{\vect{r}} × \vect{B} \)</p>
+
+      <p>Anomalous velocity
+         \( \vect{v} = e \vect{Ω} \exOfK × \vect{E} \)</p>
+    </div>
+
+    <div class="half omega">
+      <h3 class="">Berry curvature</h3>
+      <p>\(
+         \vect{Ω}_{τ σ}^n \exOfK
+          = ∇ × \left\langle u_{τ σ}^n \exOfK
+            \right\rvert i ∇_{\vK} \left\lvert u_{τ σ}^n \exOfK \right\rangle \)</p>
+
+      <p>Broken inversion symmetry</p>
+      <p>\( \vect{Ω}_{τ, σ}^n \exOfK = - \vect{Ω}_{-τ, σ}^n \exOfK ≠ 0 \)</p>
+    </div>
 {% endslide %}
 
 {% slide : BCS Superconductivity %}
