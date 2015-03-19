@@ -2,21 +2,19 @@
 // Custom Deck Styles
 //
 
+=bg-img($src, $width, $height, $sizes)
+  @each $size in $sizes
+    $w: nth($size, 2)
+    $h: ($height / $width) * $w
+    +background-image($src, $w, $h)
+
 article.deck-container
   ul.equation
     list-style: none
 
   .device-image
-    $width: 588px
-    $height: 393px
-
-    +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (1 / 2) * $width, (1 / 2) * $height)
-
-    @media #{$medium-up}
-      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', $width, $height)
-
-    @media #{$xga-up}
-      +background-image('spin-lifetime/tikz-nonlocal_spin_valve', (4 / 5) * $width, (4 /5) * $height)
+    $sizes: (($small-up, 294px), ($medium-up, 588px), ($xga-up, 470px), ($wuxga-up, 800px))
+    +bg-img('spin-lifetime/tikz-nonlocal_spin_valve', 1567px, 1048px, $sizes)
 
   .crystal-image
     $width: 1000px
