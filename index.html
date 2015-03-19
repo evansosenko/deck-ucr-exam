@@ -413,6 +413,31 @@ $${% include tex-header.tex %}$$
 {% endslide %}
 
 {% slide : BCS Superconductivity %}
+  <h3>Mean-field Hamiltonian</h3>
+  <p>
+    $$
+    H - μ N =
+      \sideset{}{}∑_{\vK σ} ξ_{\vK} c_{\vK σ}^† c_{\vK σ}
+    - \sideset{}{}∑_{\vK}
+        \left( \bar{Δ}_{\vK} c_{-\vK ↓} c_{\vK ↑}
+          + Δ_{\vK} c_{\vK ↑}^† c_{-\vK ↓}^† \right)
+    $$
+  </p>
+
+  <figure class="half">
+    {% image dichalcogenides/bcs.svg %}
+    <figcaption>Region of allowed parings for fixed center-of-mass momentum.</figcaption>
+  </figure>
+
+  <div class="half omega">
+    <p>Number of available parings maximized when center-of-mass momentum is zero</p>
+
+    <h3>Quasiparticle operators</h3>
+    <p>\( b_{\vK σ} = σ \cos{θ_{\vK}} c_{\vK σ} + \sin{θ_{\vK}} c_{-\vK, -σ}^† \)</p>
+
+    <h3>Diagonalized</h3>
+    <p>$$\sideset{}{}∑_{\vK σ} λ_{\vK} b_{\vK σ}^† b_{\vK σ}$$</p>
+  </div>
 {% endslide %}
 
 {% slide : Induced Superconductivity %}
