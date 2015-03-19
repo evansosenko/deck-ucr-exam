@@ -121,13 +121,18 @@ article.deck-container
         +full($center: true)
         +omega
 
+      > p:last-of-type
+        +full
+        +omega
+
+    @media #{$medium-up}
       p:not(:last-of-type)
         +full($center: true)
         +omega
 
-      > p:last-of-type
-        +full
-        +omega
+    @media #{$wxga-up}
+      p.long-equation
+        +half($center: true)
 
   .regimes .content
     @media #{$medium-up}
