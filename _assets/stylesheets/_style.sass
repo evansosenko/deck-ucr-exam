@@ -18,18 +18,11 @@ article.deck-container
     +bg-img('spin-lifetime/tikz-nonlocal_spin_valve', 1567px, 1048px, $sizes)
 
   .crystal-image
-    $width: 1000px
-    $height: 522px
-    $v-width: 500px
-    $v-height: 954px
+    $sizes: (($small-up, 333px), ($medium-up, 500px))
+    +bg-img('dichalcogenides/crystal-vertical', 1076px, 2053px, $sizes)
 
-    +background-image('dichalcogenides/crystal-vertical', (2 / 3) * $v-width, (2 / 3) * $v-height)
-
-    @media #{$medium-up}
-      +background-image('dichalcogenides/crystal-vertical', $v-width, $v-height)
-
-    @media #{$xga-up}
-      +background-image('dichalcogenides/crystal', (4 / 5) * $width, (4 / 5) * $height)
+    $sizes: (($xga-up, 400px), ($wuxga-up, 1000px))
+    +bg-img('dichalcogenides/crystal', 1076px, 561px, $sizes)
 
   .lattice-image
     $sizes: (($small-up, 250px), ($medium-up, 500px), ($xga-up, 400px), ($wuxga-up, 700px))
