@@ -22,7 +22,7 @@
   <meta property="og:site_name" content="evansosenko.com" />
 
 
-<meta property="og:updated_time" content="2015-03-19T05:24:08+00:00" />
+<meta property="og:updated_time" content="2015-03-19T18:33:29+00:00" />
 
 
   <meta property="og:locale" content="en_US" />
@@ -165,6 +165,11 @@ $$\newcommand{\re}{\operatorname{Re}}
   c^-_{#2}     \left( - \vK \right)
   c^-_{#1}     \left(   \vK \right)
 }
+
+\newcommand{\exThetaMPU}[1]{\frac{θ \left( #1 \right)}{2}}
+\newcommand{\exExp}{e^{-i \left( ϕ_{\vK'} - ϕ_{\vK} \right)}}
+\newcommand{\exSin}{\sin{\exThetaMPU{k}} \sin{\exThetaMPU{k'}}}
+\newcommand{\exCos}{\cos{\exThetaMPU{k}} \cos{\exThetaMPU{k'}}}
 $$
 
 <section class="slide"><h2> Two dimensional systems</h2><div class="content">
@@ -842,9 +847,31 @@ $$
     <li>Apply mean-field and an analogous analysis</li>
     <li>Both intervalley and intravalley pairing</li>
   </ul>
-</div></section>
 
-<section class="slide"><h2> Intrinsic Superconductivity</h2><div class="content">
+  <p class="small one-third">
+    $$
+    H_V = - \sideset{}{'}∑_{\vK, \vK'}
+    v \left( \vK' - \vK \right) A \left( \vK, \vK' \right)
+    $$
+  </p>
+
+  <p class="small two-thirds omega">
+    $$
+    \begin{align}
+      A \left( \vK, \vK' \right) =
+      &amp; B^2 \left( \vK, \vK' \right) \exInteration{+ ↑}{+ ↑}
+      \\ +
+      &amp; B^2 \left( \vK', \vK\right) \exInteration{- ↓}{- ↓}
+      \\ +
+      &amp; \left\lvert B \left( \vK, \vK' \right) \right\rvert^2
+      \left[
+        \exInteration{+ ↑}{- ↓}
+        \\ +
+        \exInteration{- ↓}{+ ↑}
+      \right]
+    \end{align}
+    $$
+  </p>
 </div></section>
 
 
