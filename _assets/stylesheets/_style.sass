@@ -32,16 +32,8 @@ article.deck-container
       +background-image('dichalcogenides/crystal', (4 / 5) * $width, (4 / 5) * $height)
 
   .lattice-image
-    $width: 500px
-    $height: 429px
-
-    +background-image('dichalcogenides/lattice', (1 / 2) * $width, (1 / 2) * $height)
-
-    @media #{$medium-up}
-      +background-image('dichalcogenides/lattice', $width, $height)
-
-    @media #{$xga-up}
-      +background-image('dichalcogenides/lattice', (4 / 5) * $width, (4 / 5) * $height)
+    $sizes: (($small-up, 250px), ($medium-up, 500px), ($xga-up, 400px), ($wuxga-up, 700px))
+    +bg-img('dichalcogenides/lattice', 1076px, 924px, $sizes)
 
   .outline
     @media #{$xga-up}
