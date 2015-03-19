@@ -85,7 +85,8 @@ article.deck-container
 
   .geometry .content
     ul.equation
-      +small
+      @media #{$xga-only}
+        +small
 
     @media #{$medium-only}
       div.device-image
