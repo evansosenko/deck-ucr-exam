@@ -18,7 +18,7 @@ before_script:
 # Commit the encrypted file and
 # replace the first command below with the generated one.
 before_install:
-  - openssl aes-256-cbc -K $encrypted_843694bda23e_key -iv $encrypted_843694bda23e_iv -in .deploy_key.enc -out .deploy_key -d
+  - openssl aes-256-cbc -K $encrypted_f21b2bb2749e_key -iv $encrypted_f21b2bb2749e_iv -in .deploy_key.enc -out .deploy_key -d
   - eval "$(ssh-agent)"
   - 'echo ''gem: --no-document'' > ~/.gemrc'
 
@@ -33,4 +33,4 @@ branches:
 # $ travis encrypt 'GIT_NAME="Your Name" GIT_EMAIL=you@example.com'
 # Replace the value of secure with your generated value.
 env:
-  - secure: "HflX2eY2OvmG6dx5lcWJoAkTJLAaM1LWnYnUkzzqFm9tFoiQAxtzF2drHVD8wBisKPFD7eMKQd9WAsHIBfa1CJnqVFLGpBBOCBg+spNP37UhVvB6vsxXYBhrqB3nNrhffNWp0tOzeO5JxWQqQVSshyAtGJ5MRw8HEUMIeotPVvg="
+  - secure: "Lvb3JCrUjPQXTMIpOwRL6zNE7D7vMxE/SibU8+5ThegUQTkSBMc4PXCP0Ecipms1KUX113ccxYdhE4TYWEFXTc6xcG/+vKyAzuiEJb64BHS79bM8CvEh+t97ZFRlWgU1bW9cSRSBrYZ3HCiz7jZfznLPvqmJ26SlXpG80OBxIhc="
