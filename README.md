@@ -1,8 +1,8 @@
 # Oral Qualifying Exam
 
 [![All rights reserved](https://img.shields.io/badge/license-All_rights_reserved-red.svg)](./LICENSE.txt)
-[![Dependency Status](https://img.shields.io/gemnasium/razor-x/deck-ucr-exam.svg)](https://gemnasium.com/razor-x/jekyll-and-deck.js)
-[![Build Status](https://img.shields.io/travis/razor-x/deck-ucr-exam.svg)](https://travis-ci.org/razor-x/jekyll-and-deck.js)
+[![Dependency Status](https://img.shields.io/gemnasium/evansosenko/deck-ucr-exam.svg)](https://gemnasium.com/razor-x/jekyll-and-deck.js)
+[![Build Status](https://img.shields.io/travis/evansosenko/deck-ucr-exam.svg)](https://travis-ci.org/razor-x/jekyll-and-deck.js)
 
 **by [Evan Sosenko](https://evansosenko.com/)**
 
