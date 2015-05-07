@@ -1,7 +1,7 @@
 ---
 # Jekyll options.
-domain: https://io.evansosenko.com/deck-ucr-exam
-baseurl: https://io.evansosenko.com/deck-ucr-exam
+domain: https://evansosenko.com/deck-ucr-exam
+baseurl: https://evansosenko.com/deck-ucr-exam
 markdown: redcarpet
 highlighter: pygments
 exclude:
@@ -30,7 +30,7 @@ gems:
 
 # Jekyll::AssetsPlugin options.
 assets:
-  baseurl: https://io.evansosenko.com/deck-ucr-exam/assets/
+  baseurl: https://evansosenko.com/deck-ucr-exam/assets/
   sources:
     - _assets/images
     - _assets/javascripts

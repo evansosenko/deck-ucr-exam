@@ -9,7 +9,7 @@
 See this and other talks at
 [evansosenko.com](https://evansosenko.com/).
 
-Source for [my deck](https://io.evansosenko.com/deck-ucr-exam/) running on Jekyll and deck.js.
+Source for [my deck](https://evansosenko.com/deck-ucr-exam/) running on Jekyll and deck.js.
 
 Source for your deck running on Jekyll and deck.js.
 Just clone and deck.
